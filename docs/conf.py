@@ -40,7 +40,11 @@ templates_path = ['_templates']
 # You can specify multiple suffix as a list of string:
 #
 # source_suffix = ['.rst', '.md']
+# At top on conf.py (with other import statements)
+import recommonmark
 from recommonmark.parser import CommonMarkParser
+
+from recommonmark.transform import AutoStructify
 
 source_parsers = {
   '.md': CommonMarkParser,
@@ -173,3 +177,12 @@ texinfo_documents = [
      author, 'Gitflow', 'One line description of project.',
      'Miscellaneous'),
 ]
+
+
+# At the bottom of conf.py
+def setup(app):
+    app.add_config_value('recommonmark_config', {
+            'url_resolver': lambda url: github_doc_root + url,
+            'auto_toc_tree_section': 'Contents',
+            }, True)
+    app.add_transform(AutoStructify)
