@@ -3,17 +3,19 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Gitflow's documentation!
-===================================
+# Welcome to Gitflow's documentation!
+
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
+   support
 
 
-Indices and tables
-==================
+
+# Indices and tables
+
 
 * :ref:`genindex`
 * :ref:`modindex`
@@ -25,4 +27,6 @@ Indices and tables
 
 
 Git is a versionning sofware, not a project managment one.
-Without good guidlines, it can be difficulte to deal with it
+Without good guidlines, it can be difficulte to deal with it.
+
+This documentation will try to give usefull guidline usefull to now in order to start any project.
