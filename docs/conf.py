@@ -42,9 +42,9 @@ templates_path = ['_templates']
 # source_suffix = ['.rst', '.md']
 from recommonmark.parser import CommonMarkParser
 
- source_parsers = {
-     '.md': CommonMarkParser,
- }
+source_parsers = {
+  '.md': CommonMarkParser,
+}
 
 source_suffix = ['.md']
 
